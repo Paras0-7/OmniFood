@@ -419,11 +419,11 @@
         <div class="container">
           <span class="sub-heading">Pricing</span>
           <h2 class="heading-secondary">
-            Eating wll without breaking the bank
+            Eating well without breaking the bank
           </h2>
         </div>
-        <div class="container grid">
-          <div class="pricing-plan">
+        <div class="container grid margin-bottom-sm">
+          <div class="pricing-plan pricing-starter">
             <header class="plan-header center-text">
               <p class="plan-name">Starter</p>
               <p class="plan-price"><span>$</span>399</p>
@@ -436,27 +436,35 @@
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Order times are between 11 am and 9 pm</span>
+                <span>Order from 11 am and 9 pm</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>Delivery is free</span>
               </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="close-outline"></ion-icon>
+                <span>Get acces to latest recipes</span>
+              </li>
             </ul>
-            <a href="#" class="btn btn-full">Start eating well</a>
+            <div class="plan-sign-up">
+              <a href="#" class="btn btn-full">Start eating well</a>
+            </div>
           </div>
-          <div class="pricing-plan">
-            <p class="plan-name">Complete</p>
-            <p class="plan-price"><span>$</span>649</p>
-            <p class="plan-text">per month. That's just $11 per meal!</p>
+          <div class="pricing-plan pricing-complete">
+            <header class="plan-header center-text">
+              <p class="plan-name">Complete</p>
+              <p class="plan-price"><span>$</span>649</p>
+              <p class="plan-text">per month. That's just $11 per meal!</p>
+            </header>
             <ul class="list">
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>2 meal per day</span>
+                <span><strong>2</strong> meal per day</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Order 24/7</span>
+                <span>Order <strong>24/7</strong></span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
@@ -467,7 +475,101 @@
                 <span>Get acces to latest recipes</span>
               </li>
             </ul>
-            <a href="#" class="btn btn-full">Start eating well</a>
+            <div class="plan-sign-up">
+              <a href="#" class="btn btn-full">Start eating well</a>
+            </div>
+          </div>
+        </div>
+        <div class="container grid">
+          <aside class="plan-details">
+            Prices include all applicable taxes. You can cancel at any time.
+            Both plans include the following:
+          </aside>
+        </div>
+        <div class="container features">
+          <div class="feature">
+            <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+            <p class="feature-title">Never cook again!</p>
+            <p class="feature-text">
+              Our subscriptions cover 365 days per year, even including major
+              holidays.
+            </p>
+          </div>
+
+          <div class="feature">
+            <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+            <p class="feature-title">Local and organic</p>
+            <p class="feature-text">
+              Our cooks only use local, fresh, and organic products to prepare
+              your meals.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+            <p class="feature-title">No waste</p>
+            <p class="feature-text">
+              All our partners only use reusable containers to package all your
+              meals.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+            <p class="feature-title">Pause anytime</p>
+            <p class="feature-text">
+              Going on vacation? Just pause your subscription, and we refund
+              unused days.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Get your first meal for free!</h2>
+              <p class="cta-text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today.You can cancel or pause anytime. And the first
+                meal is on us!
+              </p>
+              <form class="cta-form" action="#">
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email"> Email Address</label>
+                  <input id="email" type="email" placeholder="Email" required />
+                </div>
+
+                <div>
+                  <label for="select-where">Where did you hear about us?</label>
+                  <select id="select-where" required>
+                    <option value="">Please choose one option:</option>
+                    <option value="friends and family">
+                      Friends and Family
+                    </option>
+                    <option value="youtube">YouTube</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="facebook">FaceBook ads</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+
+                <button class="btn">Sign up now.</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Woman enjoying food"
+            ></div>
           </div>
         </div>
       </section>
