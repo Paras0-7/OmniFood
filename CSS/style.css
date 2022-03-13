@@ -569,7 +569,7 @@ body {
   margin-bottom: 4.8rem;
 }
 .cta .heading-secondary {
-  color: #45260a;
+  color: inherit;
   margin-bottom: 3.2rem;
 }
 .cta-form {
