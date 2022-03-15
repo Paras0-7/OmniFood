@@ -10,9 +10,9 @@ const options = {
 const obsCallback = function (entries) {
   const [entry] = entries;
   if (!entry.isIntersecting) {
-    nav.classList.add("sticky");
+    header.classList.add("sticky");
   } else {
-    nav.classList.remove("sticky");
+    header.classList.remove("sticky");
   }
 };
 
@@ -22,8 +22,32 @@ observer.observe(document.querySelector(".section-hero"));
 //  mobile navigation
 
 const btnNav = document.querySelector(".btn-mobile-nav");
+
 const header = document.querySelector(".header");
 
 btnNav.addEventListener("click", function (e) {
   header.classList.toggle("nav-open");
+});
+
+// smooth scrolling
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    if (href === "#") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const section = document.querySelector(href);
+      section.scrollIntoView({ behavior: "smooth" });
+      // const sectionCoords = section.getBoundingClientRect();
+      // console.log(sectionCoords);
+      // window.scrollTo(
+      //   sectionCoords.left,
+      //   window.pageYOffset + sectionCoords.top
+      // );
+      header.classList.remove("nav-open");
+    }
+  });
 });
