@@ -4,15 +4,15 @@ const yearEl = document.querySelector(".year");
 const options = {
   root: null,
   threshold: 0,
-  rootMargin: "-96px",
+  rootMargin: "-90px",
 };
 
 const obsCallback = function (entries) {
   const [entry] = entries;
   if (!entry.isIntersecting) {
-    header.classList.add("sticky");
+    document.body.classList.add("sticky");
   } else {
-    header.classList.remove("sticky");
+    document.body.classList.remove("sticky");
   }
 };
 
